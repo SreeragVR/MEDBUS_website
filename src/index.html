@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDBUS</title>
+    <!-- FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- FONTS -->
+    <!-- STYLES -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/custom-style.css">
+    <!-- STYLES -->
+</head>
+<body>
+<!-- HEADER -->
+<header class="fixed w-full z-20">
+    <div class="padding-x flex items-center justify-between gap-8 md:gap-4 bg-white px-5 md:px-7 py-2.5 mx-auto border border-[#096ac91a] shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+      <a href="index.html" class="w-16 md:w-20 block">
+        <img src="assets/MED_LOGO.webp" alt="LOGO" class="w-full" loading="lazy">
+      </a>
+
+      <nav class="md:flex items-center justify-between w-full header-navigation">
+        <div class="w-full">
+            <ul class="flex flex-col md:flex-row items-center justify-center xl:gap-12 lg:gap-10 md:gap-8 gap-2 w-full">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="values.html" class="nav-link">Service</a></li>
+                <li><a href="team.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <button class="send-message w-full md:w-fit cta-button cursor-pointer px-3.5 py-3 min-w-[150px] text-center whitespace-nowrap md:ms-4 mt-4 md:mt-0 block">
+          Book A Demo
+        </button>
+      </nav>
+
+      <div class="md:hidden">
+        <input type="checkbox" id="menu-bar" class="hidden">
+        <label class="hamburger cursor-pointer" for="menu-bar">
+            <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+      </div>
+    </div>
+</header>
+<!-- HEADER -->
+
+<!-- HERO SECTION -->
+<section class="pt-36 padding-x relative hero_section overflow-hidden">
+
+  <div class="flex flex-col lg:flex-row justify-between gap-6">
+    <div class="lg:w-[47.5%] flex flex-col justify-center">
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-left">Transform the way your clinic runs so you can focus on patient care</h2>
+      <p class="raleway text-sm md:text-[16px] lg:text-lg font-light leading-5 md:leading-6 lg:leading-7 text-[#585C7B] g-from-left">
+        Medbus is a powerful, customizable clinic management platform that streamlines everything from patient 
+        records and appointments to billing, prescriptions, and analytics. Whether you run a single specialty 
+        clinic, a multi-branch hospital, or a diagnostic center, MedBus adapts to your workflows and scales as you grow.
+      </p>
+
+      <div class="flex items-center flex-wrap gap-3 lg:gap-6 xl:gap-8 mt-5 sm:mt-6 md:mt-7 lg:mt-8 g-from-left">
+        <a href="#" class="px-3.5 py-3 block whitespace-nowrap fill-button min-w-full sm:min-w-40">Learn More</a>
+        <a href="#" class="px-3.5 py-3 block whitespace-nowrap outline-button min-w-full sm:min-w-40">Pricing</a>
+      </div>
+    </div>
+
+    <div class="lg:w-[47.5%] flex items-end justify-center relative banner_image_container g-from-right">
+      <img src="assets/images/med_doctor.webp" class="w-[85%] sm:w-[75%] md:w-[70%] lg:w-[80%] xl:w-[75%] 2xl:w-[70%]" alt="image" loading="lazy">
+      
+      <img src="assets/images/software_ui_01.png" alt="ui" class="banner_icons top-0 left-0 z-[-1]" loading="lazy">
+      <img src="assets/images/software_ui_02.png" alt="ui" class="banner_icons bottom-[20%] right-0 z-2" loading="lazy">
+    </div>
+  </div>
+
+</section>
+<!-- HERO SECTION -->
+
+<section class="padding-x bg-[#E7F1FA] py-12 lg:py-16 xl:py-20 2xl:py-24 overflow-hidden">
+  <div class="flex flex-col">
+    <div>
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#585C7B] text-center g-from-bottom">MEDBUS</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Why Medbus?</h2>
+    </div>
+
+    <div class="relative flex justify-center user_desk g-from-bottom">
+      <img src="assets/images/med_user.webp" loading="lazy" alt="image" class="relative z-1 w-1/2">
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 relative z-2 mt-6" id="featureSection">
+      
+      <div class="feature-card py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/all-in-one-control.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">All-in-one control</h4>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6">One platform for front desk, doctors, nurses, pharmacy, accounts, and administration.</p>
+      </div>
+      
+      <div class="feature-card py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/easy-adoption.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Easy adoption</h4>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6">Clean UI, role-based dashboards, and minimal training required.</p>
+      </div>
+      
+      <div class="feature-card py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/secure-compliant.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Secure & compliant</h4>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6">Data encryption, access controls, and audit trails built-in.</p>
+      </div>
+      
+      <div class="feature-card py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/custom-fit.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Custom-fit</h4>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6">Activate only the modules you need; extend/modify as your processes evolve.</p>
+      </div>
+      
+      <div class="feature-card py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/faster-decisions.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Faster decisions</h4>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6">Real-time insights into operations, finance, and patient outcomes.</p>
+      </div>
+      
+      <a href="#" class="live-demo-card block py-7 px-6 g-from-card">
+        <div class="feature-icon p-1.5 w-fit">
+          <img src="assets/images/icons/live-demo.png" class="w-16" alt="icon" loading="lazy">
+        </div>
+        <div class="flex items-center gap-2.5">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px] text-white">Get a live demo today</h4>
+        </div>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6 text-[#f2f2f2]">See how Medbus can boost patient satisfaction and operational efficiency.</p>
+      </a>
+
+    </div>
+
+
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 relative" style="overflow: visible;">
+  <div class="flex flex-col">
+    <div class="lg:sticky top-32">
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#585C7B] text-center mb-4 sm:mb-5 md:mb-6 g-from-bottom">KEY FEATURES</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Medbus Features</h2>
+    </div>
+
+    <div class="flex flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Patient Records Management</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Maintain a complete, secure patient history with demographics, visits, diagnoses, prescriptions, lab results, and files.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Unified electronic health records (EHR)</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Quick patient search & merge duplicate records</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Document uploads (scans, reports, consent forms)</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Audit logs for every change</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/patient-records-management.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Appointment Scheduling</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">A smart calendar to manage doctor availability, patient bookings, and resource allocation.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Multi-doctor & multi-location calendar</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Time-slot management with buffer times</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Patient reminders via SMS/Email/WhatsApp*</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Walk-in queue & rescheduling tools</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/appointment-scheduling.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Billing & Invoicing</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Automate billing, reduce errors, and track payments with ease.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">OP/IP billing, packages, and discounts</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Insurance & TPA support* with e-claims tracking</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Integrated payments & receipts</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Outstanding balances, refunds, and settlements</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/billing-invoicing.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Medical Reports & Analytics</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Turn raw data into decisions that improve outcomes and revenue.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Daily/weekly/monthly performance dashboards</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Doctor productivity, service utilization, revenue reports</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Patient flow, no-shows, and recurrence insights</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Export to PDF/Excel</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/medical-reports-analytics.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">e-Prescriptions</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Generate neat, legible digital prescriptions in seconds.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Drug database & dosage templates</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Favorite prescription sets per doctor</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Share with patients via portal/SMS/Email*</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Optional pharmacy integration*</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/e-prescriptions.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Role-Based Access Control</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Give the right people the right tools.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Separate dashboards for doctors, nurses, receptionist, lab, pharmacy, and admin</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Granular permissions per module/action</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Secure session management & device control</p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/images/role-based-access-control.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+
+      <div class="lg:sticky top-60 flex flex-col lg:flex-row justify-between gap-6 w-full sm:w-10/12 py-8 px-6 sm:px-7 md:px-8 lg:px-11 bg-[#F5F5F5] border border-[#096ac980] rounded-[10px] g-from-card">
+        <div class="flex flex-col justify-center">
+          <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-4 lg:mb-[22px]">Custom Modules</h4>
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6">Tailor Medbus to your exact workflow.</p>
+
+          <div class="flex flex-col gap-3 mt-6 md:mt-8 lg:mt-10">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Add or hide fields, forms, and steps</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Create custom forms for specialties (ENT, Dental, Ortho, Gyn, Pediatrics, Psychiatry, etc.)</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Support for multi-branch hierarchy & referral networks</p>
+            </div>
+          </div>
+
+          <p class="raleway font-light text-sm lg:text-[15px] leading-6 text-[#096ac980] mt-4">*Integrations and messaging options depend on your plan and region.</p>
+        </div>
+
+        <img src="assets/images/custom-modules.webp" loading="lazy" alt="img" class="w-full lg:w-5/12 xl:w-4/12 2xl:w-3/12 rounded-2xl object-cover" >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding-x pb-12 lg:pb-16 xl:pb-20 2xl:pb-24">
+  <div class="flex flex-col items-center">
+    <div>
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#585C7B] text-center mb-4 sm:mb-5 md:mb-6 g-from-bottom">WHO USE</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Who Uses Medbus?</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-4 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
+
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/Hospital.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Single & multi-specialty clinics</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/polyclinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Polyclinics and hospital OPDs</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/diagnostic_labs.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Day-care centers and diagnostic labs</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/therapy_rehab_centers 1.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Therapy & rehab centers</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/telehealth_providers.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Telehealth providers</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/general-family-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">General / Family Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/pediatric-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Pediatric Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/dermatology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Dermatology Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/psychiatric-psychology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Psychiatric & Psychology Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/obstetrics-gynecology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Obstetrics & Gynecology Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/ayurvedic-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Ayurvedic Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/orthopedic-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Orthopedic Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/cardiology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Cardiology Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/physiotherapy-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Physiotherapy Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/ent-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">ENT Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/urology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Urology Clinic</h5>
+      </div>
+      <div class="flex flex-col justify-center w-[47.5%] md:w-[30%] lg:w-[22.5%] items-center py-4 sm:py-[22px] px-2.5 sm:px-3.5 md:px-4 lg:px-5 xl:px-6 use-card g-from-bottom">
+        <img src="assets/images/gastroenterology-clinic.webp" alt="image" loading="lazy" class="w-full rounded-xl">
+        <h5 class="rubik text-sm sm:text-[16px] md:text-lg lg:text-[20px] leading-4 sm:leading-5 md:leading-6 font-semibold text-[#0B2238] text-center mt-4 sm:mt-5 md:mt-6 lg:mt-8">Gastroenterology Clinic</h5>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 bg-[#E7F1FA]">
+  <div class="flex flex-col gap-8 items-center max-[36.563em]:pb-0 pb-52 sm:pb-56 md:pb-60 lg:pb-64">
+    <div>
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#585C7B] text-center mb-4 sm:mb-5 md:mb-6 g-from-bottom">OUTCOMES</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Outcomes You Can Expect</h2>
+    </div>
+
+    <div class="relative flex flex-col items-center justify-center lg:w-full xl:w-10/12">
+      <img src="assets/images/med_man_back.webp" alt="med_man" loading="lazy" class="max-[36.563em]:w-full w-9/12 sm:w-1/2 md:w-2/5 xl:w-1/3 g-from-bottom" >
+
+      <div class="outcome-card-1">
+        <div class="outcome-box g-from-bottom">
+          <span>01</span>
+          <h5>30–50% reduction in no-shows with reminders*</h5>
+        </div>
+      </div>
+      
+      <div class="outcome-card-2">
+        <div class="outcome-box g-from-bottom">
+          <span>02</span>
+          <h5>Faster OPD turnaround and shorter queues</h5>
+        </div>
+      </div>
+      
+      <div class="outcome-card-3">
+        <div class="outcome-box g-from-bottom">
+          <span>03</span>
+          <h5>Fewer billing errors and quicker reimbursements</h5>
+        </div>
+      </div>
+      
+      <div class="outcome-card-4">
+        <div class="outcome-box g-from-bottom">
+          <span>04</span>
+          <h5>Higher patient satisfaction & repeat visits</h5>
+        </div>
+      </div>
+      
+      <div class="outcome-card-5">
+        <div class="outcome-box g-from-bottom">
+          <span>05</span>
+          <h5>Clear visibility into revenue, costs, and performance</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24">
+  <div class="flex flex-col gap-8">
+    <div>
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#096AC9] mb-4 sm:mb-5 md:mb-6 text-center g-from-bottom">PRICING</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Flexible Plans For Clinics Of All Sizes</h2>
+      <p class="raleway text-sm md:text-[16px] lg:text-lg font-light leading-5 md:leading-6 lg:leading-7 text-center text-[#585C7B] g-from-bottom">
+        Choose the perfect plan that scales with your practice. 
+        Whether you’re a single clinic or a multi-branch hospital, 
+        we’ve got you covered.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 grid-cols-1 gap-5 lg:gap-7">
+
+      <div class="price-card px-4 sm:px-6 md:px-9 lg:px-10 py-4 sm:py-6 md:py-9 lg:py-10 g-from-bottom">
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-2.5 text-[#585C7B]">Starter</h4>
+        <h2 class="rubik font-semibold text-[#096AC9] text-[34px]">₹ 20,000/-</h2>
+
+        <button class="outline-button py-4 px-2.5 w-full cursor-pointer my-4 sm:my-6 md:my-8 lg:my-9">Get Started</button>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6 mb-3 sm:mb-4 md:mb-5 lg:mb-6">Essential tools to digitize your OPD operations.</p>
+
+        <div class="flex flex-col gap-3">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Core OPD management</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">E-prescriptions</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Basic billing & invoices</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Patient registration & visit history</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Doctor schedule management</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="price-card px-4 sm:px-6 md:px-9 lg:px-10 py-4 sm:py-6 md:py-9 lg:py-10 shadow-[0_10px_15px_rgba(88,92,123,0.2)] g-from-bottom">
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-2.5 text-[#585C7B]">Professional Plan</h4>
+        <h2 class="rubik font-semibold text-[#096AC9] text-[34px]">₹ 50,000/-</h2>
+
+        <button class="fill-button py-4 px-2.5 w-full cursor-pointer my-4 sm:my-6 md:my-8 lg:my-9">Get Started</button>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6 mb-3 sm:mb-4 md:mb-5 lg:mb-6">Expand your clinic’s capabilities with advanced modules.</p>
+
+        <div class="flex flex-col gap-3">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Everything in Starter</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Integrated Lab & Radiology management</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">In-clinic Pharmacy module</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Analytics & Reports dashboard</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Multi-user access with role-based permissions</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="price-card px-4 sm:px-6 md:px-9 lg:px-10 py-4 sm:py-6 md:py-9 lg:py-10 g-from-bottom">
+        <h4 class="rubik font-semibold text-lg lg:text-[20px] mb-2.5 text-[#585C7B]">Enterprise Plan</h4>
+        <h2 class="rubik font-semibold text-[#096AC9] text-[34px]">₹ 90,000/-</h2>
+
+        <button class="outline-button py-4 px-2.5 w-full cursor-pointer my-4 sm:my-6 md:my-8 lg:my-9">Get Started</button>
+        <p class="raleway font-light text-sm lg:text-[15px] leading-6 mb-3 sm:mb-4 md:mb-5 lg:mb-6">Built for hospitals and multi-branch networks.</p>
+
+        <div class="flex flex-col gap-3">
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Everything in Professional</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Multi-branch & central reporting</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Custom integrations (LIS, HIS, PACS, Insurance, etc.)</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">On-premise or cloud deployment options</p>
+            </div>
+            <div class="flex gap-5 items-start">
+              <img src="assets/images/icons/plus.png" loading="lazy" alt="icon" class="w-4 sm:w-5 lg:w-6">
+              <p class="raleway font-light text-sm lg:text-[15px] leading-6">Dedicated account manager & support</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <p class="raleway font-light text-sm lg:text-[15px] leading-6 text-[#096AC9]">All plans include secure data storage, compliance with healthcare data standards, and regular updates. Pricing varies based on the number of users, selected modules, and deployment model.</p>
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 bg-[#096AC9]">
+  <div class="flex flex-col lg:flex-row justify-between lg:gap-6">
+
+    <div class="flex flex-col gap-6 justify-between lg:w-[47.5%]">
+        <div>
+          <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-white mb-4 sm:mb-5 md:mb-6 g-from-left">GET IN TOUCH</h6>
+          <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-white mb-6 sm:mb-7 md:mb-8 lg:mb-9 g-from-left">Get in touch with us!</h2>
+          <p class="raleway text-sm md:text-[16px] lg:text-lg font-light leading-5 md:leading-6 lg:leading-7 text-white g-from-left">
+            Have questions, need a demo, or want a custom quote? We’re here to help you every step of the way.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-6">
+          <h6 class="text-xl text-white rubik leading-[30px]">Follow us on social media</h6>
+          <div class="flex items-center gap-6">
+            <a href="#" target="_blank" class="social-icon">
+              <img src="assets/images/icons/instagram-dark.svg" class="w-5 dark-icon" alt="icon">
+              <img src="assets/images/icons/instagram-color.svg" class="w-5 color-icon" alt="icon">
+            </a>
+
+            <a href="#" target="_blank" class="social-icon">
+              <img src="assets/images/icons/facebook-dark.svg" class="w-5 dark-icon" alt="icon">
+              <img src="assets/images/icons/facebook-color.svg" class="w-5 color-icon" alt="icon">
+            </a>
+
+            <a href="#" target="_blank" class="social-icon">
+              <img src="assets/images/icons/twitter-dark.svg" class="w-5 dark-icon" alt="icon">
+              <img src="assets/images/icons/twitter-color.svg" class="w-5 color-icon" alt="icon">
+            </a>
+
+            <a href="#" target="_blank" class="social-icon">
+              <img src="assets/images/icons/linkedin-dark.svg" class="w-5 dark-icon" alt="icon">
+              <img src="assets/images/icons/linkedin-color.svg" class="w-5 color-icon" alt="icon">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="lg:w-[47.5%]">
+
+      <form action="" class="mt-6 md:mt-8 lg:mt-0 form-container bg-[rgba(255,255,255,0.2)] rounded-xl lg:rounded-2xl xl:rounded-3xl px-5 sm:px-6 md:px-7 lg:px-8 xl:px-10 py-5 sm:py-6 md:py-7 lg:py-8 xl:py-10 g-from-right">
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+          <div class="flex flex-col flex-1">
+            <label for="name" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+
+          <div class="flex flex-col flex-1">
+            <label for="email" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+          <div class="flex flex-col flex-1">
+            <label for="phoneNumber" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Phone Number</label>
+            <input type="number" id="phoneNumber" placeholder="000 XXX 00 00">
+          </div>
+
+          <div class="flex flex-col flex-1">
+            <label for="companyName" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Company Name</label>
+            <input type="text" id="companyName" placeholder="Enter your email">
+          </div>
+        </div>
+
+        <div class="flex flex-col flex-1">
+            <label for="Message" class="rubik font-semibold text-lg md:text-[16px] text-white mb-3">Message</label>
+            <textarea name="Message" id="Message" placeholder="Message"></textarea>
+        </div>
+
+        <button type="submit" class="view-otp submit-button min-w-full sm:min-w-[175px] mt-4 sm:mt-5">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 flex justify-center">
+  <div class="flex flex-col items-center w-full sm:w-11/12 lg:w-10/12">
+    <div>
+      <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#585C7B] text-center mb-4 sm:mb-5 md:mb-6 g-from-bottom">FAQ</h6>
+      <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] text-center mb-5 sm:mb-6 md:mb-7 lg:mb-8 g-from-bottom">Frequently Asked Questions</h2>
+    </div>
+
+      <div class="faq_main_container w-full flex flex-col gap-3">
+
+          <div class="faq_container flex flex-col bg-[#E7F1FA] px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer g-from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] text-[#096AC9] font-medium">
+                <span>01.</span> <h3>Is Medbus suitable for multi-branch setups?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/images/icons/minus.png" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/images/icons/plus.png" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="text-[#585C7B] font-light text-sm lg:text-[15px] leading-4 lg:leading-6 raleway answercont open-answer">Yes. Manage branches, users, and consolidated reports from one place.</p>
+          </div>
+
+          <div class="faq_container flex flex-col bg-[#E7F1FA] px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer g-from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] text-[#096AC9] font-medium">
+                <span>02.</span> <h3>Can I migrate my existing data?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/images/icons/minus.png" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/images/icons/plus.png" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="text-[#585C7B] font-light text-sm lg:text-[15px] leading-4 lg:leading-6 raleway answercont">Absolutely. We help import patients, services, price lists, and more. </p>
+          </div>
+
+          <div class="faq_container flex flex-col bg-[#E7F1FA] px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer g-from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] text-[#096AC9] font-medium">
+                <span>03.</span> <h3>Do you offer support?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/images/icons/minus.png" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/images/icons/plus.png" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="text-[#585C7B] font-light text-sm lg:text-[15px] leading-4 lg:leading-6 raleway answercont">Yes—email/chat/phone support based on plan, plus a knowledge base and training. </p>
+          </div>
+
+          <div class="faq_container flex flex-col bg-[#E7F1FA] px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer g-from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] text-[#096AC9] font-medium">
+                <span>04.</span> <h3>What about offline access?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/images/icons/minus.png" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/images/icons/plus.png" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="text-[#585C7B] font-light text-sm lg:text-[15px] leading-4 lg:leading-6 raleway answercont">Core features are cloud-first; selective offline workflows can be discussed for on-premise deployments. </p>
+          </div>
+
+          <div class="faq_container flex flex-col bg-[#E7F1FA] px-3 sm:px-3.5 md:px-4 lg:px-5 py-3.5 sm:py-4 md:py-5 lg:py-6 rounded-[14px] cursor-pointer g-from-bottom">
+            <div class="faq_question flex items-center justify-between">
+              <div class="flex items-center gap-5 rubik sm:text-[16px] md:text-lg lg:text-[20px] leading-[30px] text-[#096AC9] font-medium">
+                <span>05.</span> <h3>Is teleconsultation supported?</h3>
+              </div>
+                <div class="icon">
+                  <img src="assets/images/icons/minus.png" alt="icon" loading="lazy" class="close-faq w-6">
+                  <img src="assets/images/icons/plus.png" alt="icon" loading="lazy" class="open-faq w-6">
+                </div>
+            </div>
+            <p class="text-[#585C7B] font-light text-sm lg:text-[15px] leading-4 lg:leading-6 raleway answercont">Yes—secure video, e-prescriptions, and payments can be enabled where supported.</p>
+          </div>
+
+      
+        </div>
+  </div>
+</section>
+
+<section class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 bg-[#E7F1FA] cta-section">
+  <div class="flex flex-col lg:flex-row justify-between gap-5 lg:gap-6">
+
+    <div class="flex flex-col justify-center gap-6 lg:w-[47.5%]">
+      <div>
+          <h6 class="rubik text-[16px] sm:text-lg md:text-[21px] font-light text-[#096AC9] mb-4 sm:mb-5 md:mb-6 g-from-left">CONTACT US</h6>
+          <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] mb-6 sm:mb-7 md:mb-8 lg:mb-9 g-from-left">Ready to modernize your clinic?</h2>
+          <p class="raleway text-sm md:text-[16px] lg:text-lg font-light leading-5 md:leading-6 lg:leading-7 text-[#585C7B] g-from-left">
+            Book a free demo to see Medbus in action—or start a pilot with your front desk and one department to measure impact within weeks.
+          </p>
+      </div>
+
+      <div class="flex items-center flex-wrap gap-5">
+
+        <button class="send-message fill-button flex items-center gap-3.5 px-4 py-3.5 cursor-pointer w-full sm:w-fit text-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M5.16008 3.05832L16.4667 9.41915C16.5697 9.47718 16.6555 9.56155 16.7151 9.66361C16.7748 9.76568 16.8062 9.88177 16.8062 9.99999C16.8062 10.1182 16.7748 10.2343 16.7151 10.3364C16.6555 10.4384 16.5697 10.5228 16.4667 10.5808L5.16008 16.9417C5.0586 16.9987 4.94394 17.0282 4.82753 17.0271C4.71112 17.0261 4.597 16.9946 4.49654 16.9358C4.39608 16.877 4.31277 16.7929 4.25491 16.6918C4.19705 16.5908 4.16666 16.4764 4.16675 16.36V3.63998C4.1668 3.52364 4.19731 3.40933 4.25523 3.30842C4.31314 3.20752 4.39646 3.12353 4.4969 3.0648C4.59734 3.00607 4.7114 2.97465 4.82774 2.97366C4.94408 2.97267 5.05866 3.00131 5.16008 3.05832Z" 
+           fill="currentColor"/>
+          </svg>
+          Request Demo
+        </button>
+
+        <button class="fill-button view-otp flex items-center gap-3.5 px-4 py-3.5 cursor-pointer w-full sm:w-fit text-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3.33301H11.6667V8.33301H13.75L10 12.083M10 3.33301H8.33333V8.33301H6.25L10 12.083" fill="currentColor"/>
+            <path d="M10 3.33301H11.6667V8.33301H13.75L10 12.083L6.25 8.33301H8.33333V3.33301H10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 15.833H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Download Brochure
+        </button>
+
+        <button class="fill-button flex items-center gap-3.5 px-4 py-3.5 cursor-pointer w-full sm:w-fit text-center justify-center">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.025 12.7171L13.9084 12.4755C13.6595 12.4462 13.4072 12.4738 13.1705 12.5561C12.9338 12.6383 12.7188 12.7732 12.5417 12.9505L11.0084 14.4838C8.64286 13.2804 6.72009 11.3576 5.5167 8.99213L7.05837 7.45046C7.4167 7.09212 7.5917 6.59213 7.53337 6.08379L7.2917 3.98379C7.24463 3.5772 7.04959 3.20214 6.74375 2.93012C6.43792 2.65809 6.04267 2.50812 5.63337 2.50879H4.1917C3.25003 2.50879 2.4667 3.29212 2.52503 4.23379C2.9667 11.3505 8.65837 17.0338 15.7667 17.4755C16.7084 17.5338 17.4917 16.7505 17.4917 15.8088V14.3671C17.5 13.5255 16.8667 12.8171 16.025 12.7171Z" 
+            fill="currentColor"/>
+          </svg>
+          Talk to an Expert
+        </button>
+      </div>
+    </div>
+
+    <div class="lg:w-[47.5%] flex items-center justify-center g-from-right">
+      <div class="cta-image-container flex justify-center items-center relative">
+        <img src="assets/images/TECHMAN_IMAGE.webp" alt="techman" loading="lazy" class="w-full sm:w-10/12 md:w-9/12 lg:w-8/12">
+        <img src="assets/images/cta-icon-1.webp" alt="icon" class="tech-man-icon tech-man-icon-1">
+        <img src="assets/images/cta_icon-2.webp" alt="icon" class="tech-man-icon tech-man-icon-2">
+        <img src="assets/images/cta-icon-3.webp" alt="icon" class="tech-man-icon tech-man-icon-3">
+        <img src="assets/images/cta-icon-4.webp" alt="icon" class="tech-man-icon tech-man-icon-4">
+        <img src="assets/images/cta-icon-5.webp" alt="icon" class="tech-man-icon tech-man-icon-5">
+        <img src="assets/images/cta-icon-6.webp" alt="icon" class="tech-man-icon tech-man-icon-6">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="padding-x py-12 lg:py-16 xl:py-20 2xl:py-24">
+  <div class="flex flex-col gap-4 sm:gap-6">
+    <div class="flex flex-col lg:flex-row lg:items-center gap-5 lg:justify-between">
+      <div class="lg:w-[47.5%]">
+          <h2 class="rubik text-[38px] sm:text-[42px] md:text-[44px] lg:text-[46px] xl:text-[50px] leading-8 sm:leading-[38px] md:leading-[42px] lg:leading-[46px] font-black text-[#0B2238] mb-6 sm:mb-7 md:mb-8 lg:mb-9 g-from-left">Stay updated with our latest news</h2>
+          <p class="raleway text-sm md:text-[16px] lg:text-lg font-light leading-5 md:leading-6 lg:leading-7 text-[#585C7B] g-from-left">
+            Get updates straight to your inbox.
+          </p>
+      </div>
+      
+      <div class="lg:w-2/5 xl:w-1/4">
+        <form action="" class="flex items-center gap-2.5 newsletter-box rounded-[44px] px-5 py-3 g-from-right">
+          <input type="email" placeholder="Enter your email" class="outline-0 w-full">
+          <button class="whitespace-nowrap">Join Now</button>
+        </form>
+      </div>
+    </div>
+
+    <hr class="border-[#096ac91a]">
+
+    <div class="flex flex-col sm:flex-row justify-between gap-5">
+
+      <div class="flex flex-col sm:flex-row gap-6  sm:gap-10 md:gap-20 lg:gap-40 lg:w-8/12">
+        <div class="flex flex-col gap-5 g-from-bottom">
+          <h5 class="text-[#096AC9] rubik font-medium text-xl leading-[30px]">Quick Links</h5>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="footer-link">Home</a>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact us</a>
+            <a href="#" class="footer-link">Products</a>
+          </div>
+        </div>
+        
+        <div class="flex flex-col gap-5 g-from-bottom">
+          <h5 class="text-[#096AC9] rubik font-medium text-xl leading-[30px]">About</h5>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="footer-link">Pricing</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Features</a>
+            <a href="#" class="footer-link">Services</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5 g-from-bottom">
+          <h5 class="text-[#096AC9] rubik font-medium text-xl leading-[30px]">Others</h5>
+          <div class="flex flex-col gap-3">
+            <a href="#" class="footer-link">Software Services</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Privacy policy</a>
+            <a href="#" class="footer-link">Integrations</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 lg:w-4/12 g-from-bottom">
+        <h5 class="text-[#096AC9] rubik font-medium text-xl leading-[30px]">Connect With Us</h5>
+        <div class="flex flex-col gap-3">
+
+          <a href="#" class="footer-link flex items-center gap-4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.025 12.7171L13.9084 12.4755C13.6595 12.4462 13.4072 12.4738 13.1705 12.5561C12.9338 12.6383 12.7188 12.7732 12.5417 12.9505L11.0084 14.4838C8.64286 13.2804 6.72009 11.3576 5.5167 8.99213L7.05837 7.45046C7.4167 7.09212 7.5917 6.59213 7.53337 6.08379L7.2917 3.98379C7.24463 3.5772 7.04959 3.20214 6.74375 2.93012C6.43792 2.65809 6.04267 2.50812 5.63337 2.50879H4.1917C3.25003 2.50879 2.4667 3.29212 2.52503 4.23379C2.9667 11.3505 8.65837 17.0338 15.7667 17.4755C16.7084 17.5338 17.4917 16.7505 17.4917 15.8088V14.3671C17.5 13.5255 16.8667 12.8171 16.025 12.7171Z" 
+              fill="#096AC9"/>
+            </svg>
+             +91 89217 54101
+          </a>
+
+          <a href="#" class="footer-link flex items-center gap-4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.84667 15.8337C3.46278 15.8337 3.1425 15.7053 2.88583 15.4487C2.62917 15.192 2.50056 14.8714 2.5 14.487V5.51366C2.5 5.12977 2.62861 4.80949 2.88583 4.55283C3.14306 4.29616 3.46306 4.16755 3.84583 4.16699H16.1542C16.5375 4.16699 16.8575 4.2956 17.1142 4.55283C17.3708 4.81005 17.4994 5.13033 17.5 5.51366V14.4878C17.5 14.8712 17.3714 15.1914 17.1142 15.4487C16.8569 15.7059 16.5369 15.8342 16.1542 15.8337H3.84667ZM10 9.96699C10.0694 9.96699 10.1344 9.95644 10.195 9.93533C10.255 9.91421 10.3144 9.88838 10.3733 9.85783L16.3975 5.91366C16.4764 5.86588 16.5278 5.8006 16.5517 5.71783C16.5756 5.63505 16.5711 5.55255 16.5383 5.47033C16.5172 5.3631 16.4472 5.28533 16.3283 5.23699C16.21 5.18921 16.0953 5.19894 15.9842 5.26616L10 9.16699L4.01667 5.26699C3.90556 5.19921 3.79333 5.18477 3.68 5.22366C3.56667 5.26255 3.49389 5.33921 3.46167 5.45366C3.42944 5.53921 3.42528 5.62616 3.44917 5.71449C3.47306 5.80283 3.52417 5.86949 3.6025 5.91449L9.62667 9.85783C9.68556 9.88838 9.745 9.91421 9.805 9.93533C9.86556 9.95588 9.93056 9.96616 10 9.96616" 
+              fill="#096AC9"/>
+            </svg>
+            info@techbus.org
+          </a>
+
+          <a href="#" class="footer-link flex items-center gap-4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_91_580)">
+              <path d="M6.875 10C6.875 10.7917 6.91042 11.5592 6.97625 12.2917H13.0237C13.0896 11.5592 13.125 10.7917 13.125 10C13.125 9.20833 13.0896 8.44083 13.0233 7.70833H6.97708C6.91042 8.44083 6.875 9.20833 6.875 10ZM5.72208 7.70833C5.65687 8.47048 5.62448 9.23507 5.625 10C5.625 10.7858 5.65833 11.5529 5.72167 12.2917H0.907083C0.722917 11.5583 0.625 10.7904 0.625 10C0.625 9.20958 0.722917 8.44167 0.907083 7.70833H5.72208ZM7.12458 6.45833H12.875C12.69 5.19708 12.41 4.0725 12.0629 3.14875C11.7383 2.285 11.3675 1.62875 10.9879 1.20042C10.6075 0.770417 10.2717 0.625 10 0.625C9.72833 0.625 9.3925 0.770833 9.01167 1.2C8.63208 1.62917 8.26125 2.285 7.93667 3.14875C7.58958 4.0725 7.30958 5.19708 7.12417 6.45833M14.2779 7.70833C14.3417 8.44708 14.375 9.21417 14.375 10C14.375 10.7858 14.3417 11.5529 14.2783 12.2917H19.0929C19.2771 11.5583 19.375 10.7904 19.375 10C19.375 9.20958 19.2771 8.44167 19.0929 7.70833H14.2779ZM18.6833 6.45833H14.1379C13.9421 5.04667 13.6321 3.77083 13.2333 2.70917C12.9788 2.03167 12.6821 1.425 12.3442 0.920417C15.2275 1.66292 17.5733 3.7425 18.6825 6.45833M5.86167 6.45833H1.31708C2.42583 3.7425 4.77208 1.66292 7.65542 0.920833C7.31792 1.425 7.02083 2.03167 6.76625 2.70917C6.3675 3.77083 6.05792 5.04667 5.86208 6.45833M5.86083 13.5417H1.31708C2.42542 16.2562 4.76958 18.335 7.65042 19.0783C7.31292 18.5742 7.01708 17.9675 6.76292 17.2908C6.365 16.2283 6.05583 14.9533 5.86083 13.5417ZM12.0667 16.8517C12.4125 15.9279 12.6917 14.8033 12.8767 13.5417H7.12333C7.30792 14.8033 7.58708 15.9279 7.93333 16.8517C8.2575 17.7154 8.62792 18.3713 9.00833 18.7996C9.38833 19.2288 9.725 19.375 10 19.375C10.275 19.375 10.6117 19.2288 10.9917 18.7996C11.3721 18.3713 11.7425 17.7154 12.0667 16.8517ZM13.2371 17.2904C13.635 16.2288 13.9442 14.9529 14.1392 13.5417H18.6829C17.5746 16.2562 15.2304 18.335 12.3496 19.0783C12.6871 18.5742 12.9829 17.9671 13.2371 17.2904Z" 
+              fill="#096AC9"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_91_580">
+              <rect width="20" height="20" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+            www.techbus.org
+          </a>
+
+          <a href="#" class="footer-link flex items-center gap-4">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.7141 4.41965C12.1108 1.85882 7.88996 1.85882 5.28662 4.41965C4.66852 5.02351 4.17738 5.74484 3.84205 6.54124C3.50672 7.33764 3.33398 8.19303 3.33398 9.05715C3.33398 9.92126 3.50672 10.7767 3.84205 11.5731C4.17738 12.3695 4.66852 13.0908 5.28662 13.6946L9.99996 18.3321L14.7141 13.6946C15.3322 13.0908 15.8234 12.3695 16.1587 11.5731C16.494 10.7767 16.6668 9.92126 16.6668 9.05715C16.6668 8.19303 16.494 7.33764 16.1587 6.54124C15.8234 5.74484 15.3322 5.02351 14.7141 4.41965ZM9.99996 11.2488C9.44329 11.2488 8.92079 11.0321 8.52662 10.6388C8.13641 10.2478 7.91727 9.71791 7.91727 9.16548C7.91727 8.61305 8.13641 8.08319 8.52662 7.69215C8.91996 7.29881 9.44329 7.08215 9.99996 7.08215C10.5566 7.08215 11.08 7.29881 11.4733 7.69215C11.8635 8.08319 12.0826 8.61305 12.0826 9.16548C12.0826 9.71791 11.8635 10.2478 11.4733 10.6388C11.08 11.0321 10.5566 11.2488 9.99996 11.2488Z" 
+              fill="#096AC9"/>
+            </svg>
+            Kochi, Kerala, India
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col sm:flex-row justify-between gap-4 sm:items-center">
+      <a href="index.html" class="w-16 md:w-20 block g-from-left">
+        <img src="assets/MED_LOGO.webp" alt="LOGO" class="w-full" loading="lazy">
+      </a>
+
+      <a href="#" class="rubik text-sm text-[#585C7B] g-from-right">©2025 Medbus. All rights reserved - License. Powered by Techbus.</a>
+    </div>
+
+  </div>
+</footer>
+
+<!-- POPUP FORM -->
+
+<div class="pop-form padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 items-center justify-center">
+
+  <form action="" class="w-full sm:w-fit relative mt-6 md:mt-8 lg:mt-0 form-container bg-white rounded-xl lg:rounded-2xl xl:rounded-3xl px-5 sm:px-6 md:px-7 lg:px-8 xl:px-10 py-8 sm:py-9 md:py-10 lg:py-12 xl:py-14">
+
+    <div class="close-form flex justify-end">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M11.0002 12.2833L6.50856 16.775C6.34051 16.943 6.12662 17.0271 5.86689 17.0271C5.60717 17.0271 5.39328 16.943 5.22523 16.775C5.05717 16.6069 4.97314 16.393 4.97314 16.1333C4.97314 15.8736 5.05717 15.6597 5.22523 15.4916L9.71689 11L5.22523 6.50832C5.05717 6.34026 4.97314 6.12637 4.97314 5.86665C4.97314 5.60693 5.05717 5.39304 5.22523 5.22498C5.39328 5.05693 5.60717 4.9729 5.86689 4.9729C6.12662 4.9729 6.34051 5.05693 6.50856 5.22498L11.0002 9.71665L15.4919 5.22498C15.6599 5.05693 15.8738 4.9729 16.1336 4.9729C16.3933 4.9729 16.6072 5.05693 16.7752 5.22498C16.9433 5.39304 17.0273 5.60693 17.0273 5.86665C17.0273 6.12637 16.9433 6.34026 16.7752 6.50832L12.2836 11L16.7752 15.4916C16.9433 15.6597 17.0273 15.8736 17.0273 16.1333C17.0273 16.393 16.9433 16.6069 16.7752 16.775C16.6072 16.943 16.3933 17.0271 16.1336 17.0271C15.8738 17.0271 15.6599 16.943 15.4919 16.775L11.0002 12.2833Z" 
+       fill="currentColor"/>
+      </svg>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+      <div class="flex flex-col flex-1">
+        <label for="name" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+      <div class="flex flex-col flex-1">
+        <label for="email" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 mb-3.5">
+      <div class="flex flex-col flex-1">
+        <label for="phoneNumber" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Phone Number</label>
+        <input type="number" id="phoneNumber" placeholder="000 XXX 00 00">
+      </div>
+      <div class="flex flex-col flex-1">
+        <label for="companyName" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Company Name</label>
+        <input type="text" id="companyName" placeholder="Enter your email">
+      </div>
+    </div>
+    <div class="flex flex-col flex-1">
+        <label for="Message" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Message</label>
+        <textarea name="Message" id="Message" placeholder="Message"></textarea>
+    </div>
+    <button type="submit" onclick="event.preventDefault(); return false;" class="submit-button min-w-full sm:min-w-[175px] mt-4 sm:mt-5 view-otp">Send Message</button>  
+
+  </form>
+
+</div>
+
+<div class="otp-form padding-x py-12 lg:py-16 xl:py-20 2xl:py-24 flex items-center justify-center">
+
+  <div class="w-full sm:w-8/12 md:w-7/12 lg:w-1/2 relative mt-6 md:mt-8 lg:mt-0 form-container bg-white rounded-xl lg:rounded-2xl xl:rounded-3xl px-5 sm:px-6 md:px-7 lg:px-8 xl:px-10 py-8 sm:py-9 md:py-10 lg:py-12 xl:py-14">
+    <div class="close-form flex justify-end">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path d="M11.0002 12.2833L6.50856 16.775C6.34051 16.943 6.12662 17.0271 5.86689 17.0271C5.60717 17.0271 5.39328 16.943 5.22523 16.775C5.05717 16.6069 4.97314 16.393 4.97314 16.1333C4.97314 15.8736 5.05717 15.6597 5.22523 15.4916L9.71689 11L5.22523 6.50832C5.05717 6.34026 4.97314 6.12637 4.97314 5.86665C4.97314 5.60693 5.05717 5.39304 5.22523 5.22498C5.39328 5.05693 5.60717 4.9729 5.86689 4.9729C6.12662 4.9729 6.34051 5.05693 6.50856 5.22498L11.0002 9.71665L15.4919 5.22498C15.6599 5.05693 15.8738 4.9729 16.1336 4.9729C16.3933 4.9729 16.6072 5.05693 16.7752 5.22498C16.9433 5.39304 17.0273 5.60693 17.0273 5.86665C17.0273 6.12637 16.9433 6.34026 16.7752 6.50832L12.2836 11L16.7752 15.4916C16.9433 15.6597 17.0273 15.8736 17.0273 16.1333C17.0273 16.393 16.9433 16.6069 16.7752 16.775C16.6072 16.943 16.3933 17.0271 16.1336 17.0271C15.8738 17.0271 15.6599 16.943 15.4919 16.775L11.0002 12.2833Z" 
+       fill="currentColor"/>
+      </svg>
+    </div>
+
+    <h3 class="rubik font-semibold text-lg md:text-20px lg:text-[24px] mb-2">Secure Verification</h3>
+    <p class="raleway font-light text-sm lg:text-[15px] leading-6 mb-5">For your account’s security, please enter the OTP we just sent to your registered contact details. This step helps us verify it’s really you.</p>
+
+    <form action="" class="flex flex-col gap-4 mb-3.5 otp-verification">
+      <div class="flex flex-col flex-1">
+        <label for="name" class="rubik font-semibold text-lg md:text-[16px] text-[#0B2238] mb-3">Enter Your Phone Number</label>
+        <input type="number" id="name" placeholder="000 XXX 0000">
+      </div>
+      <button onclick="event.preventDefault(); return false;" class="outline-button px-5 py-4 cursor-pointer w-full verify-otp">Verify OTP</button>
+    </form>
+
+    <div class="hidden items-center justify-between py-3 edit-container">
+      <p class="raleway text-sm text-[#096AC9]">Resend OTP : <span>00:00</span></p>
+
+      <button class="flex items-center gap-2 cursor-pointer raleway hover:font-medium transition-all hover:text-[#0B2238] text-[#096AC9] edit-number">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M4.82867 11.998H2V9.16935L9.62333 1.54602C9.74835 1.42104 9.91789 1.35083 10.0947 1.35083C10.2714 1.35083 10.441 1.42104 10.566 1.54602L12.452 3.43135C12.514 3.49327 12.5632 3.5668 12.5967 3.64773C12.6303 3.72866 12.6475 3.81541 12.6475 3.90302C12.6475 3.99063 12.6303 4.07738 12.5967 4.15831C12.5632 4.23925 12.514 4.31277 12.452 4.37469L4.82867 11.998ZM2 13.3314H14V14.6647H2V13.3314Z" 
+         fill="currentColor"/>
+        </svg>
+        Edit Number
+      </button>
+    </div>
+
+    <form action="" class="otp-container flex-col hidden">
+      <div class="flex gap-2 sm:gap-4 items-center mb-4">
+        <input type="text" maxlength="1" autofocus >
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+        <input type="text" maxlength="1">
+      </div>
+      <button type="submit" class="fill-button px-5 py-4 cursor-pointer w-full">Send messsage</button>
+    </form>
+
+  </div>
+</div>
+
+<!-- POPUP FORM -->
+    
+
+<script defer src="js/script.js"></script>
+</body>
+</html>
