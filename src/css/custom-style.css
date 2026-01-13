@@ -14,7 +14,7 @@ body{
 }
 .rubik{
   font-family: var(--rubik-font);
-  letter-spacing: 1.4px;
+  letter-spacing: 0.6px;
 }
 .raleway{
   font-family: var(--raleway-font);
