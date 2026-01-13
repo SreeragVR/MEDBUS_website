@@ -8,6 +8,39 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     }
 
+    const dropDowns = document.querySelectorAll('.drop-down')
+    if(dropDowns){
+        dropDowns.forEach((dropdown)=>{
+            const dropButton = dropdown.querySelector('.drop-button')
+            const dropbox = dropdown.querySelector('.drop-down-list')
+            const icon = dropdown.querySelector('.drop-button svg')
+            const links = dropdown.querySelectorAll('.menu-link')
+            dropButton.addEventListener('click', (e)=>{
+                e.stopPropagation()
+                dropDowns.forEach((otherDrop)=>{
+                    if(otherDrop !== dropdown){
+                        other.querySelector('.drop-down-list').classList.add('hidden')
+                        other.querySelector('.drop-button svg').classList.remove('icon-rotate')
+                    }
+                })
+                dropbox.classList.toggle('hidden')
+                icon.classList.toggle('icon-rotate', !dropbox.classList.contains('hidden'))
+            })
+            links.forEach((link)=>{
+                link.addEventListener('click', ()=>{
+                    dropbox.classList.add('hidden')
+                    icon.classList.remove('icon-rotate')
+                })
+            })
+        })
+        document.addEventListener('click',()=>{
+            dropDowns.forEach((dropdown)=>{
+                dropdown.querySelector('.drop-down-list').classList.add('hidden')
+                dropdown.querySelector('.drop-button svg').classList.remove('icon-rotate')
+            })
+        })
+    }
+
     const docContainer = document.querySelector('.hero_section')
     const docIcons = document.querySelectorAll('.banner_icons')
     if(docContainer && docIcons){
@@ -29,6 +62,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
             docIcons.forEach((icon) => {
               icon.style.transform = 'translate(0, 0)'
             })
+        })
+    }
+
+    const header = document.querySelector('header')
+    if(header){
+        document.addEventListener('scroll', ()=>{
+            if(scrollY > 10){
+                header.classList.add('bg-white')
+            }else{
+                header.classList.remove('bg-white')
+            }
         })
     }
 
@@ -192,6 +236,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
         })
     }
 
+    // SWIPER
+    if(document.querySelector('.clinicSwiper')){
+    const clinicSwiper = new Swiper(".clinicSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      }
+    })
+    }
 
     // SCROLL ANIMATIONS
 
@@ -209,17 +282,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }, {
         threshold: 0.2
     })
-
     const elements = document.querySelectorAll(elementClass)
     elements.forEach((el)=>observer.observe(el))
     }
     }
-
     scrollingElements('left-show','.g-from-left')
     scrollingElements('right-show','.g-from-right')
     scrollingElements('bottom-show','.g-from-bottom')
     scrollingElements('card-show','.g-from-card')
-
-
-
 })
