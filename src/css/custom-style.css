@@ -899,6 +899,26 @@ footer::before{
     background-color: #096AC9;
   }
 }
+.key-feature-card{
+  background-color: #04498E;
+  border-radius: 30px;
+  color: white;
+  overflow: hidden;
+  &:hover{
+    background-color: #096AC9;
+  }
+}
+.key-feature-image{
+  transition: 0.5s ease;
+}
+.key-feature-card:hover .key-feature-image{
+  transform: scale(1.02);
+  box-shadow: inset 0px 0px 2px #000000;
+}
+.key-feature-card img{
+  background-color: white;
+  border-radius: 30px;
+}
 section{
   overflow-x: hidden;
 }
